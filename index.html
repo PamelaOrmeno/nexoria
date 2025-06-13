@@ -92,30 +92,60 @@
     <p class="text-gray-400 italic">Próximamente...</p>
   </section>
 
-  <!-- Contacto -->
-  <section id="contacto" class="px-6 py-20 bg-purple-50 text-center">
-    <h2 class="text-3xl md:text-4xl font-bold text-gray-900 mb-6">Contáctanos</h2>
-    <p class="text-gray-700 max-w-2xl mx-auto mb-10">Agenda una reunión, cuéntanos tu proyecto o simplemente escríbenos.</p>
-    <form id="contactForm" class="max-w-3xl mx-auto grid gap-6 text-left">
-      <div class="grid md:grid-cols-2 gap-4">
-        <input type="text" name="nombre" placeholder="Nombre completo" required class="p-3 border border-gray-300 rounded-lg w-full focus:outline-none focus:ring-2 focus:ring-purple-500">
-        <input type="email" name="correo" placeholder="Correo electrónico" required class="p-3 border border-gray-300 rounded-lg w-full focus:outline-none focus:ring-2 focus:ring-purple-500">
+<!-- Contacto -->
+<section id="contacto" class="py-16 px-4 max-w-4xl mx-auto">
+  <h2 class="text-3xl font-bold text-center mb-4">Contáctanos</h2>
+  <p class="text-center mb-8 text-gray-600">Agenda una reunión, cuéntanos tu proyecto o simplemente escríbenos.</p>
+
+  <form action="https://formsubmit.co/contacto@nexoria.cl" method="POST" class="bg-white shadow-md rounded-2xl p-8 space-y-6">
+    <input type="hidden" name="_captcha" value="false">
+    <input type="hidden" name="_next" value="https://nexoria.cl/gracias.html">
+
+    <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+      <div>
+        <label for="nombre" class="block text-sm font-medium text-gray-700 mb-1">Nombre completo</label>
+        <input type="text" name="nombre" id="nombre" required
+               class="w-full border border-gray-300 rounded-xl p-2.5 focus:ring-2 focus:ring-purple-400 outline-none shadow-sm">
       </div>
-      <div class="grid md:grid-cols-2 gap-4">
-        <select name="tipo" required class="p-3 border border-gray-300 rounded-lg w-full focus:outline-none focus:ring-2 focus:ring-purple-500 text-gray-500">
-          <option value="" disabled selected hidden>Selecciona una opción</option>
-          <option value="tienda">Crear mi primera tienda</option>
-          <option value="optimizar">Optimizar mi tienda actual</option>
-          <option value="mentoria">Mentoría 1:1 con Nexoria</option>
+
+      <div>
+        <label for="opcion" class="block text-sm font-medium text-gray-700 mb-1">Selecciona una opción</label>
+        <select name="opcion" id="opcion" required
+                class="w-full border border-gray-300 rounded-xl p-2.5 bg-white focus:ring-2 focus:ring-purple-400 outline-none shadow-sm">
+          <option value="">Selecciona una opción</option>
+          <option value="tienda-nueva">Quiero crear mi tienda</option>
+          <option value="optimizacion">Optimizar tienda existente</option>
+          <option value="mentoria">Solicitar mentoría</option>
         </select>
-        <textarea name="mensaje" rows="5" placeholder="Cuéntanos tu idea o necesidad..." required class="p-3 border border-gray-300 rounded-lg w-full focus:outline-none focus:ring-2 focus:ring-purple-500"></textarea>
       </div>
-      <div class="text-right">
-        <button type="submit" class="bg-purple-700 text-white px-6 py-3 rounded-xl hover:bg-purple-800 transition">Enviar mensaje</button>
+
+      <div class="md:col-span-2">
+        <label for="email" class="block text-sm font-medium text-gray-700 mb-1">Correo electrónico</label>
+        <input type="email" name="email" id="email" required
+               class="w-full border border-gray-300 rounded-xl p-2.5 focus:ring-2 focus:ring-purple-400 outline-none shadow-sm">
       </div>
-      <p id="formSuccess" class="hidden text-green-600 text-sm mt-4 text-right">¡Mensaje enviado correctamente!</p>
-    </form>
-  </section>
+
+      <div class="md:col-span-2">
+        <label for="mensaje" class="block text-sm font-medium text-gray-700 mb-1">Cuéntanos tu idea o necesidad</label>
+        <textarea name="mensaje" id="mensaje" rows="4" required
+                  class="w-full border border-gray-300 rounded-xl p-2.5 focus:ring-2 focus:ring-purple-400 outline-none shadow-sm resize-none"></textarea>
+      </div>
+    </div>
+
+    <div class="text-center pt-4">
+      <button type="submit"
+              class="bg-purple-600 hover:bg-purple-700 text-white font-semibold px-6 py-3 rounded-full transition-all duration-200 shadow-md">
+        Enviar mensaje
+      </button>
+    </div>
+  </form>
+</section>
+
+
+<!-- Contacto -->
+
+
+  
 
   <!-- Footer -->
   <footer class="bg-gray-900 text-white px-6 py-10 text-center">
