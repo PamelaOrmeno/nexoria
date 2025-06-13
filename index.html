@@ -1,6 +1,5 @@
 <!DOCTYPE html>
-<html lang="es">
-
+<html lang="es" class="scroll-smooth">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -12,16 +11,13 @@
   <link rel="stylesheet" href="css/styles.css">
 </head>
 
-<body class="bg-white text-gray-800 pt-16">
-  <!-- Header -->
+<body class="bg-white text-gray-800 pt-24">
   <header
     class="fixed top-0 left-0 right-0 z-50 bg-white flex justify-between items-center px-6 py-4 border-b shadow-sm">
-
     <div class="text-2xl font-bold text-purple-700">Nexoria</div>
     <nav class="space-x-4 hidden md:flex" aria-label="Menú principal">
       <a href="#inicio" class="text-gray-700 hover:text-purple-700">Inicio</a>
       <a href="#servicios" class="text-gray-700 hover:text-purple-700">Servicios</a>
-       <!-- <a href="#portafolio" class="text-gray-700 hover:text-purple-700">Portafolio</a>-->
       <a href="#blog" class="text-gray-700 hover:text-purple-700">Blog</a>
       <a href="#contacto" class="text-gray-700 hover:text-purple-700">Contacto</a>
     </nav>
@@ -29,9 +25,9 @@
       class="hidden md:inline-block bg-purple-700 text-white px-4 py-2 rounded-xl hover:bg-purple-800 transition">Agenda
       tu asesoría</a>
   </header>
-
   <!-- Hero Section -->
-  <section id="inicio" class="px-6 py-16 text-center bg-gradient-to-br from-purple-50 to-white">
+
+  <section id="inicio" class="scroll-mt-[112px] px-6 py-16 text-center bg-gradient-to-br from-purple-50 to-white">
     <h1 class="text-4xl md:text-5xl font-extrabold text-gray-900 leading-tight">
       Transformamos tu negocio<br />
       <span class="text-purple-700">en una marca digital escalable</span>
@@ -43,74 +39,82 @@
       class="mt-8 inline-block bg-purple-700 text-white px-6 py-3 rounded-xl text-lg hover:bg-purple-800 transition">Quiero
       mi tienda</a>
   </section>
-
   <!-- Servicios Destacados -->
 
+  <section id="servicios" class="scroll-mt-28 px-6 py-20 bg-white text-center">
+    <h2 class="text-3xl font-bold text-center mb-4">Servicios</h2>
+    <p class="text-center text-gray-600 mb-10">Soluciones pensadas para mujeres emprendedoras que quieren llevar su
+      negocio digital al siguiente nivel.</p>
 
-  <section id="servicios" class="py-16 px-4 max-w-6xl mx-auto">
-  <h2 class="text-3xl font-bold text-center mb-4">Servicios</h2>
-  <p class="text-center text-gray-600 mb-10">Soluciones pensadas para mujeres emprendedoras que quieren llevar su negocio digital al siguiente nivel.</p>
+    <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+      <!-- Servicio 1 -->
+      <div class="bg-white shadow-lg rounded-2xl p-6 text-center hover:shadow-xl transition">
+        <div class="text-5xl mb-4">🛒</div>
+        <h3 class="text-xl font-semibold mb-2">Crear tu tienda desde cero</h3>
+        <p class="text-gray-600 mb-4">Desde el diseño hasta la puesta en marcha. Ideal si aún no tienes presencia
+          digital o quieres comenzar bien.</p>
+        <a href="#contacto"
+          class="inline-block bg-purple-600 text-white px-4 py-2 rounded-full hover:bg-purple-700 transition">Quiero
+          este servicio</a>
+      </div>
 
-  <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
-    <!-- Servicio 1 -->
-    <div class="bg-white shadow-lg rounded-2xl p-6 text-center hover:shadow-xl transition">
-      <div class="text-5xl mb-4">🛒</div>
-      <h3 class="text-xl font-semibold mb-2">Crear tu tienda desde cero</h3>
-      <p class="text-gray-600 mb-4">Desde el diseño hasta la puesta en marcha. Ideal si aún no tienes presencia digital o quieres comenzar bien.</p>
-      <a href="#contacto" class="inline-block bg-purple-600 text-white px-4 py-2 rounded-full hover:bg-purple-700 transition">Quiero este servicio</a>
+      <!-- Servicio 2 -->
+      <div class="bg-white shadow-lg rounded-2xl p-6 text-center hover:shadow-xl transition">
+        <div class="text-5xl mb-4">⚙️</div>
+        <h3 class="text-xl font-semibold mb-2">Optimizar tienda existente</h3>
+        <p class="text-gray-600 mb-4">Mejora el SEO, automatiza procesos y convierte más. Perfecto si ya tienes tienda y
+          quieres escalar.</p>
+        <a href="#contacto"
+          class="inline-block bg-purple-600 text-white px-4 py-2 rounded-full hover:bg-purple-700 transition">Quiero
+          este servicio</a>
+      </div>
+
+      <!-- Servicio 3 -->
+      <div class="bg-white shadow-lg rounded-2xl p-6 text-center hover:shadow-xl transition">
+        <div class="text-5xl mb-4">🎯</div>
+        <h3 class="text-xl font-semibold mb-2">Mentoría personalizada</h3>
+        <p class="text-gray-600 mb-4">Sesiones 1:1 para apoyarte con estrategia digital, herramientas y toma de
+          decisiones.</p>
+        <a href="#contacto"
+          class="inline-block bg-purple-600 text-white px-4 py-2 rounded-full hover:bg-purple-700 transition">Solicitar
+          mentoría</a>
+      </div>
     </div>
-
-    <!-- Servicio 2 -->
-    <div class="bg-white shadow-lg rounded-2xl p-6 text-center hover:shadow-xl transition">
-      <div class="text-5xl mb-4">⚙️</div>
-      <h3 class="text-xl font-semibold mb-2">Optimizar tienda existente</h3>
-      <p class="text-gray-600 mb-4">Mejora el SEO, automatiza procesos y convierte más. Perfecto si ya tienes tienda y quieres escalar.</p>
-      <a href="#contacto" class="inline-block bg-purple-600 text-white px-4 py-2 rounded-full hover:bg-purple-700 transition">Quiero este servicio</a>
-    </div>
-
-    <!-- Servicio 3 -->
-    <div class="bg-white shadow-lg rounded-2xl p-6 text-center hover:shadow-xl transition">
-      <div class="text-5xl mb-4">🎯</div>
-      <h3 class="text-xl font-semibold mb-2">Mentoría personalizada</h3>
-      <p class="text-gray-600 mb-4">Sesiones 1:1 para apoyarte con estrategia digital, herramientas y toma de decisiones.</p>
-      <a href="#contacto" class="inline-block bg-purple-600 text-white px-4 py-2 rounded-full hover:bg-purple-700 transition">Solicitar mentoría</a>
-    </div>
-  </div>
-</section>
+  </section>
 
 
 
 
   <!-- Portafolio -->
- <!-- <section id="portafolio" class="px-6 py-20 bg-purple-50 text-center">
-    <h2 class="text-3xl md:text-4xl font-bold text-gray-900 mb-4">Casos reales, resultados reales</h2>
-    <p class="text-gray-700 max-w-2xl mx-auto mb-12">Historias de negocios que confiaron en Nexoria para profesionalizar
-      y escalar su presencia digital.</p>
-    <div class="grid gap-8 md:grid-cols-3 max-w-6xl mx-auto">
-      <div class="bg-white rounded-xl shadow-md p-6">
-        <h3 class="text-xl font-semibold text-purple-700 mb-2">Aurelia Home (Demo en desarrollo)</h3>
-        <p class="text-gray-700 mb-4">Tienda ficticia de artículos para el hogar. Muestra funcionalidades de
-          automatización, diseño UX y estructura profesional.</p>
-        <a href="#" class="inline-block text-purple-700 font-medium hover:underline">Ver tienda demo</a>
-      </div>
-      <div class="bg-white rounded-xl shadow-md p-6">
-        <h3 class="text-xl font-semibold text-purple-700 mb-2">Emprendedora Cosmética</h3>
-        <p class="text-gray-700 mb-4">Tienda básica desarrollada para una revendedora con recursos limitados. Enfocada
-          en accesibilidad y empoderamiento inicial.</p>
-        <a href="#" class="inline-block text-purple-700 font-medium hover:underline">Ver tienda</a>
-      </div>
-      <div class="bg-white rounded-xl shadow-md p-6">
-        <h3 class="text-xl font-semibold text-purple-700 mb-2">Portafolio Web Corretaje</h3>
-        <p class="text-gray-700 mb-4">Sitio web tipo tarjeta digital para mostrar propiedades y contacto directo de
-          manera profesional.</p>
-        <a href="#" class="inline-block text-purple-700 font-medium hover:underline">Ver sitio</a>
-      </div>
-    </div>
-  </section>
+  <!-- <section id="portafolio" class="px-6 py-20 bg-purple-50 text-center">
+<h2 class="text-3xl md:text-4xl font-bold text-gray-900 mb-4">Casos reales, resultados reales</h2>
+<p class="text-gray-700 max-w-2xl mx-auto mb-12">Historias de negocios que confiaron en Nexoria para profesionalizar
+y escalar su presencia digital.</p>
+<div class="grid gap-8 md:grid-cols-3 max-w-6xl mx-auto">
+<div class="bg-white rounded-xl shadow-md p-6">
+<h3 class="text-xl font-semibold text-purple-700 mb-2">Aurelia Home (Demo en desarrollo)</h3>
+<p class="text-gray-700 mb-4">Tienda ficticia de artículos para el hogar. Muestra funcionalidades de
+automatización, diseño UX y estructura profesional.</p>
+<a href="#" class="inline-block text-purple-700 font-medium hover:underline">Ver tienda demo</a>
+</div>
+<div class="bg-white rounded-xl shadow-md p-6">
+<h3 class="text-xl font-semibold text-purple-700 mb-2">Emprendedora Cosmética</h3>
+<p class="text-gray-700 mb-4">Tienda básica desarrollada para una revendedora con recursos limitados. Enfocada
+en accesibilidad y empoderamiento inicial.</p>
+<a href="#" class="inline-block text-purple-700 font-medium hover:underline">Ver tienda</a>
+</div>
+<div class="bg-white rounded-xl shadow-md p-6">
+<h3 class="text-xl font-semibold text-purple-700 mb-2">Portafolio Web Corretaje</h3>
+<p class="text-gray-700 mb-4">Sitio web tipo tarjeta digital para mostrar propiedades y contacto directo de
+manera profesional.</p>
+<a href="#" class="inline-block text-purple-700 font-medium hover:underline">Ver sitio</a>
+</div>
+</div>
+</section>
 -->
 
   <!-- Blog -->
-  <section id="blog" class="px-6 py-20 bg-white text-center">
+  <section id="blog" class="px-6 py-28 bg-white text-center">
     <h2 class="text-3xl md:text-4xl font-bold text-gray-900 mb-4">Blog Nexoria</h2>
     <p class="text-gray-700 max-w-2xl mx-auto mb-8">Artículos, consejos y estrategias reales para potenciar tu tienda
       online y tu negocio digital.</p>
@@ -118,7 +122,7 @@
   </section>
 
   <!-- Contacto -->
-  <section id="contacto" class="py-16 px-4 max-w-4xl mx-auto">
+  <section id="contacto" class="scroll-mt-28 py-16 px-4 max-w-4xl mx-auto">
     <h2 class="text-3xl font-bold text-center mb-4">Contáctanos</h2>
     <p class="text-center mb-8 text-gray-600">Agenda una reunión, cuéntanos tu proyecto o simplemente escríbenos.</p>
 
@@ -189,40 +193,60 @@
     </div>
   </footer>
   <script>
-  const form = document.querySelector("form");
-  const mensajeExito = document.getElementById("mensaje-exito");
+    const form = document.querySelector("form");
+    const mensajeExito = document.getElementById("mensaje-exito");
 
-  form.addEventListener("submit", function (e) {
-    e.preventDefault();
+    form.addEventListener("submit", function (e) {
+      e.preventDefault();
 
-    const data = new FormData(form);
+      const data = new FormData(form);
 
-    fetch(form.action, {
-      method: "POST",
-      body: data,
-      headers: {
-        'Accept': 'application/json'
+      fetch(form.action, {
+        method: "POST",
+        body: data,
+        headers: {
+          'Accept': 'application/json'
+        }
+      }).then(response => {
+        if (response.ok) {
+          form.reset();
+          form.classList.add("hidden");
+          mensajeExito.classList.remove("hidden");
+
+          // Redirigir al inicio después de 4 segundos
+          setTimeout(() => {
+            window.location.href = "#"; // O usa 'index.html' si es otra página
+          }, 2000);
+
+        } else {
+          alert("Ocurrió un error al enviar el mensaje. Inténtalo más tarde.");
+        }
+      }).catch(error => {
+        alert("No se pudo enviar el mensaje.");
+      });
+    });
+
+
+      document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+    anchor.addEventListener('click', function (e) {
+      const targetId = this.getAttribute('href').substring(1);
+      const targetEl = document.getElementById(targetId);
+
+      if (targetEl) {
+        e.preventDefault();
+        const offset = 112; // altura del header
+        const top = targetEl.getBoundingClientRect().top + window.pageYOffset - offset;
+
+        window.scrollTo({
+          top: top,
+          behavior: 'smooth'
+        });
       }
-    }).then(response => {
-      if (response.ok) {
-        form.reset();
-        form.classList.add("hidden");
-        mensajeExito.classList.remove("hidden");
-
-        // Redirigir al inicio después de 4 segundos
-        setTimeout(() => {
-          window.location.href = "#"; // O usa 'index.html' si es otra página
-        }, 2000);
-
-      } else {
-        alert("Ocurrió un error al enviar el mensaje. Inténtalo más tarde.");
-      }
-    }).catch(error => {
-      alert("No se pudo enviar el mensaje.");
     });
   });
-</script>
 
-
+  
+  </script>
 </body>
+
 </html>

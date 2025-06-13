@@ -103,10 +103,10 @@ nav a:hover {
 }
 
 /* SECCIONES GENERALES */
-section {
+/* section {
   padding: 60px 20px;
 }
-
+*/
 .grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
