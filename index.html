@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="es" class="scroll-smooth">
+
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -16,7 +17,7 @@
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-5G4YGJWFDX"></script>
 <script>
   window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
+  function gtag() { dataLayer.push(arguments); }
   gtag('js', new Date());
 
   gtag('config', 'G-5G4YGJWFDX');
@@ -24,15 +25,18 @@
 
 <!-- Meta Pixel Code -->
 <script>
-  !function(f,b,e,v,n,t,s)
-  {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
-  n.callMethod.apply(n,arguments):n.queue.push(arguments)};
-  if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
-  n.queue=[];t=b.createElement(e);t.async=!0;
-  t.src=v;s=b.getElementsByTagName(e)[0];
-  s.parentNode.insertBefore(t,s)}(window, document,'script',
-  'https://connect.facebook.net/en_US/fbevents.js');
-  fbq('init', '1727460057857151'); 
+  !function (f, b, e, v, n, t, s) {
+    if (f.fbq) return; n = f.fbq = function () {
+      n.callMethod ?
+      n.callMethod.apply(n, arguments) : n.queue.push(arguments)
+    };
+    if (!f._fbq) f._fbq = n; n.push = n; n.loaded = !0; n.version = '2.0';
+    n.queue = []; t = b.createElement(e); t.async = !0;
+    t.src = v; s = b.getElementsByTagName(e)[0];
+    s.parentNode.insertBefore(t, s)
+  }(window, document, 'script',
+    'https://connect.facebook.net/en_US/fbevents.js');
+  fbq('init', '1727460057857151');
   fbq('track', 'PageView');
 
   document.addEventListener('DOMContentLoaded', function () {
@@ -64,7 +68,7 @@
 </script>
 <noscript>
   <img height="1" width="1" style="display:none"
-  src="https://www.facebook.com/tr?id=1727460057857151&ev=PageView&noscript=1"/>
+    src="https://www.facebook.com/tr?id=1727460057857151&ev=PageView&noscript=1" />
 </noscript>
 
 
@@ -72,9 +76,9 @@
   <header
     class="fixed top-0 left-0 right-0 z-50 bg-white flex justify-between items-center px-6 py-4 border-b shadow-sm">
     <a href="#">
-  <img src="assets/logo.png" alt="Nexoria logo" class="logo-img" />
-</a>
-   <!-- <div class="text-2xl font-bold text-purple-700">Nexoria</div>-->
+      <img src="assets/logo.png" alt="Nexoria logo" class="logo-img" />
+    </a>
+    <!-- <div class="text-2xl font-bold text-purple-700">Nexoria</div>-->
     <nav class="space-x-4 hidden md:flex" aria-label="Menú principal">
       <a href="#inicio" class="text-gray-700 hover:text-purple-700">Inicio</a>
       <a href="#servicios" class="text-gray-700 hover:text-purple-700">Servicios</a>
@@ -98,10 +102,11 @@
       Estrategia, tecnología y acompañamiento real para emprendedores que quieren crecer.
     </p>
 
-<a href="#contacto" id="quiero-tienda"
-  class="mt-8 inline-block bg-purple-700 text-white px-6 py-3 rounded-xl text-lg hover:bg-purple-800 transition">
-  Quiero mi tienda
-</a>
+    <a href="#contacto" id="quiero-tienda"
+      class="mt-8 inline-block bg-purple-700 text-white px-6 py-3 rounded-xl text-lg hover:bg-purple-800 transition">
+      Quiero mi tienda
+    </a>
+
 
 
 
@@ -110,50 +115,51 @@
 
   <section id="servicios" class="scroll-mt-28 px-6 py-20 bg-white text-center">
     <h2 class="text-3xl font-bold text-center mb-4">Servicios</h2>
-    <p class="text-center text-gray-600 mb-10">    Soluciones estratégicas para emprendedores y negocios digitales que buscan crecer, optimizar y escalar con tecnología.</p>
+    <p class="text-center text-gray-600 mb-10"> Soluciones estratégicas para emprendedores y negocios digitales que
+      buscan crecer, optimizar y escalar con tecnología.</p>
 
     <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
       <!-- Servicio 1 -->
-<div class="bg-white shadow-lg rounded-2xl p-6 text-center hover:shadow-xl transition flex flex-col h-full">
+      <div class="bg-white shadow-lg rounded-2xl p-6 text-center hover:shadow-xl transition flex flex-col h-full">
         <div class="text-5xl mb-4">🛒</div>
         <h3 class="text-xl font-semibold mb-2">Crear tu tienda desde cero</h3>
         <div class="flex-grow">
-          <p class="text-gray-600 mb-4">Desde el diseño hasta la puesta en marcha. 
+          <p class="text-gray-600 mb-4">Desde el diseño hasta la puesta en marcha.
             Ideal si aún no tienes presencia digital o quieres comenzar bien.
           </p>
-        </div> 
+        </div>
         <a href="#contacto"
-        class="mt-4 inline-block bg-purple-600 text-white px-4 py-2 rounded-full hover:bg-purple-700 transition self-center">
-        Quiero este servicio
+          class="mt-4 inline-block bg-purple-600 text-white px-4 py-2 rounded-full hover:bg-purple-700 transition self-center">
+          Quiero este servicio
         </a>
       </div>
 
       <!-- Servicio 2 -->
-<div class="bg-white shadow-lg rounded-2xl p-6 text-center hover:shadow-xl transition flex flex-col h-full">
+      <div class="bg-white shadow-lg rounded-2xl p-6 text-center hover:shadow-xl transition flex flex-col h-full">
         <div class="text-5xl mb-4">⚙️</div>
         <h3 class="text-xl font-semibold mb-2">Optimizar tienda existente</h3>
-          <div class="flex-grow">
+        <div class="flex-grow">
 
-        <p class="text-gray-600 mb-4">Mejora el SEO, automatiza procesos y convierte más. 
-          Perfecto si ya tienes tienda y quieres escalar.</p>
-          </div>
+          <p class="text-gray-600 mb-4">Mejora el SEO, automatiza procesos y convierte más.
+            Perfecto si ya tienes tienda y quieres escalar.</p>
+        </div>
         <a href="#contacto"
           class="mt-4 inline-block bg-purple-600 text-white px-4 py-2 rounded-full hover:bg-purple-700 transition self-center">
-     Quiero este servicio</a>
+          Quiero este servicio</a>
       </div>
 
       <!-- Servicio 3 -->
-<div class="bg-white shadow-lg rounded-2xl p-6 text-center hover:shadow-xl transition flex flex-col h-full">
+      <div class="bg-white shadow-lg rounded-2xl p-6 text-center hover:shadow-xl transition flex flex-col h-full">
         <div class="text-5xl mb-4">🎯</div>
         <h3 class="text-xl font-semibold mb-2">Mentoría personalizada</h3>
-          <div class="flex-grow">
+        <div class="flex-grow">
 
-        <p class="text-gray-600 mb-4">Sesiones 1:1 para apoyarte con estrategia digital, herramientas y toma de
-          decisiones.</p>
-          </div>
+          <p class="text-gray-600 mb-4">Sesiones 1:1 para apoyarte con estrategia digital, herramientas y toma de
+            decisiones.</p>
+        </div>
         <a href="#contacto"
-        class="mt-4 inline-block bg-purple-600 text-white px-4 py-2 rounded-full hover:bg-purple-700 transition self-center">
-     Quiero este servicio
+          class="mt-4 inline-block bg-purple-600 text-white px-4 py-2 rounded-full hover:bg-purple-700 transition self-center">
+          Quiero este servicio
         </a>
       </div>
     </div>
@@ -191,10 +197,10 @@ manera profesional.</p>
 -->
 
   <!-- Blog -->
-<section id="blog" class="px-6 py-20 bg-gray-50 text-center">
-  <h2 class="text-3xl font-bold mb-4">Blog</h2>
-  <p class="text-gray-600 text-lg">Estamos preparando contenido valioso para ti. ¡Muy pronto disponible!</p>
-</section>
+  <section id="blog" class="px-6 py-20 bg-gray-50 text-center">
+    <h2 class="text-3xl font-bold mb-4">Blog</h2>
+    <p class="text-gray-600 text-lg">Estamos preparando contenido valioso para ti. ¡Muy pronto disponible!</p>
+  </section>
 
 
   <!-- Contacto -->
@@ -202,7 +208,7 @@ manera profesional.</p>
     <h2 class="text-3xl font-bold text-center mb-4">Contáctanos</h2>
     <p class="text-center mb-8 text-gray-600">Agenda una reunión, cuéntanos tu proyecto o simplemente escríbenos.</p>
 
-    <form id = "formulario" action="https://formsubmit.co/contacto@nexoria.cl" method="POST"
+    <form id="formulario" action="https://formsubmit.co/contacto@nexoria.cl" method="POST"
       class="bg-white shadow-md rounded-2xl p-8 space-y-6">
       <input type="hidden" name="_captcha" value="false">
 
@@ -243,6 +249,9 @@ manera profesional.</p>
           class="bg-purple-600 hover:bg-purple-700 text-white font-semibold px-6 py-3 rounded-full transition-all duration-200 shadow-md">
           Enviar mensaje
         </button>
+
+
+
       </div>
     </form>
 
@@ -269,11 +278,11 @@ manera profesional.</p>
     </div>
   </footer>
 
-    <!-- Botón volver arriba -->
-<button id="btnVolverArriba"
-        class="hidden fixed bottom-6 right-6 bg-purple-600 hover:bg-purple-700 text-white px-4 py-2 rounded-full shadow-lg transition-opacity duration-300 z-50">
-  ↑
-</button>
+  <!-- Botón volver arriba -->
+  <button id="btnVolverArriba"
+    class="hidden fixed bottom-6 right-6 bg-purple-600 hover:bg-purple-700 text-white px-4 py-2 rounded-full shadow-lg transition-opacity duration-300 z-50">
+    ↑
+  </button>
 
 
   <script>
@@ -311,48 +320,53 @@ manera profesional.</p>
     });
 
 
-      document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-    anchor.addEventListener('click', function (e) {
-      const targetId = this.getAttribute('href').substring(1);
-      const targetEl = document.getElementById(targetId);
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+      anchor.addEventListener('click', function (e) {
+        const targetId = this.getAttribute('href').substring(1);
+        const targetEl = document.getElementById(targetId);
 
-      if (targetEl) {
-        e.preventDefault();
-        const offset = 112; // altura del header
-        const top = targetEl.getBoundingClientRect().top + window.pageYOffset - offset;
+        if (targetEl) {
+          e.preventDefault();
+          const offset = 112; // altura del header
+          const top = targetEl.getBoundingClientRect().top + window.pageYOffset - offset;
 
-        window.scrollTo({
-          top: top,
-          behavior: 'smooth'
-        });
+          window.scrollTo({
+            top: top,
+            behavior: 'smooth'
+          });
+        }
+      });
+    });
+
+
+    const btnVolverArriba = document.getElementById('btnVolverArriba');
+
+    window.addEventListener('scroll', () => {
+      if (window.scrollY > 200) {
+        btnVolverArriba.classList.remove('hidden');
+      } else {
+        btnVolverArriba.classList.add('hidden');
       }
     });
-  });
 
-  
-  const btnVolverArriba = document.getElementById('btnVolverArriba');
-
-  window.addEventListener('scroll', () => {
-    if (window.scrollY > 200) {
-      btnVolverArriba.classList.remove('hidden');
-    } else {
-      btnVolverArriba.classList.add('hidden');
-    }
-  });
-
-  btnVolverArriba.addEventListener('click', () => {
-    window.scrollTo({
-      top: 0,
-      behavior: 'smooth'
+    btnVolverArriba.addEventListener('click', () => {
+      window.scrollTo({
+        top: 0,
+        behavior: 'smooth'
+      });
     });
-  });
 
   </script>
 
-
-
-
+  <a href="https://wa.me/56948880019?text=Hola%20Nexoria,%20quiero%20información%20sobre%20los%20servicios"
+   target="_blank" title="Contáctanos por WhatsApp"
+   rel="noopener noreferrer"
+    aria-label="Abrir WhatsApp de Nexoria"
+    class="fixed bottom-20 right-5 z-50 bg-green-500 hover:bg-green-600 text-white p-4 rounded-full shadow-lg transition-all duration-200 flex items-center justify-center">
+  <svg xmlns="http://www.w3.org/2000/svg" class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24">
+    <path d="M20.52 3.48A11.78 11.78 0 0012 0 11.94 11.94 0 000 12a11.8 11.8 0 001.67 6.14L0 24l6.26-1.64A11.87 11.87 0 0012 24a11.94 11.94 0 0012-12 11.8 11.8 0 00-3.48-8.52zm-8.5 17.2a9.72 9.72 0 01-4.94-1.35l-.35-.2-3.71 1 1-3.6-.23-.36a9.76 9.76 0 01-1.5-5.14A9.84 9.84 0 0112 2.2 9.68 9.68 0 0121.8 12a9.82 9.82 0 01-9.78 8.68zm5.54-7c-.3-.15-1.74-.86-2-1s-.47-.15-.66.15-.76 1-1 1.2-.36.22-.66.07a8 8 0 01-2.37-1.47 8.9 8.9 0 01-1.65-2.06c-.18-.3 0-.46.13-.6a4 4 0 00.6-.82.56.56 0 00-.03-.52c-.08-.15-.66-1.58-.9-2.17s-.46-.5-.66-.5-.37 0-.57 0a1.1 1.1 0 00-.8.37 3.37 3.37 0 00-1 2.48 6 6 0 001.3 3.13A14.23 14.23 0 0012 17a7.45 7.45 0 003.6.92 3.5 3.5 0 002.32-1.57 2.86 2.86 0 00.3-1.47c-.03-.13-.15-.18-.45-.33z"/>
+  </svg>
+</a>
 
 </body>
-
 </html>
