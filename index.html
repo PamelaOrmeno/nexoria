@@ -6,7 +6,7 @@
   <title>Nexoria - Consultora Digital para Negocios que Crecen</title>
   <meta name="description"
     content="Consultora digital para emprendedores que quieren escalar su negocio con tiendas online, automatización y estrategia real.">
-  <link rel="icon" href="/favicon.ico" type="image/x-icon" />
+  <link rel="icon" href="assets/favicon.ico" type="image/x-icon" />
   <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
   <link rel="stylesheet" href="css/styles.css">
 </head>
@@ -34,6 +34,33 @@
   'https://connect.facebook.net/en_US/fbevents.js');
   fbq('init', '1727460057857151'); 
   fbq('track', 'PageView');
+
+  document.addEventListener('DOMContentLoaded', function () {
+    // Evento: Agendar tu asesoría
+    const agendarBtn = document.querySelector('#agendar-btn');
+    if (agendarBtn) {
+      agendarBtn.addEventListener('click', function () {
+        fbq('track', 'Schedule');
+      });
+    }
+
+    // Evento: Quiero mi tienda
+    const tiendaBtn = document.querySelector('#quiero-tienda');
+    if (tiendaBtn) {
+      tiendaBtn.addEventListener('click', function () {
+        fbq('track', 'Lead');
+      });
+    }
+
+    // Evento: Envío de formulario de contacto
+    const contactoForm = document.querySelector('#formulario');
+    if (contactoForm) {
+      contactoForm.addEventListener('submit', function () {
+        fbq('track', 'Contact');
+      });
+    }
+  });
+
 </script>
 <noscript>
   <img height="1" width="1" style="display:none"
@@ -54,9 +81,11 @@
       <!--<a href="#blog" class="text-gray-700 hover:text-purple-700">Blog</a>-->
       <a href="#contacto" class="text-gray-700 hover:text-purple-700">Contacto</a>
     </nav>
-    <a href="#contacto"
-      class="hidden md:inline-block bg-purple-700 text-white px-4 py-2 rounded-xl hover:bg-purple-800 transition">Agenda
-      tu asesoría</a>
+    <a href="#contacto" id="agendar-btn"
+      class="hidden md:inline-block bg-purple-700 text-white px-4 py-2 rounded-xl hover:bg-purple-800 transition">
+      Agenda tu asesoría
+    </a>
+
   </header>
   <!-- Hero Section -->
 
@@ -68,9 +97,14 @@
     <p class="mt-6 text-lg text-gray-700 max-w-2xl mx-auto">
       Estrategia, tecnología y acompañamiento real para emprendedores que quieren crecer.
     </p>
-    <a href="#contacto"
-      class="mt-8 inline-block bg-purple-700 text-white px-6 py-3 rounded-xl text-lg hover:bg-purple-800 transition">Quiero
-      mi tienda</a>
+
+<a href="#contacto" id="quiero-tienda"
+  class="mt-8 inline-block bg-purple-700 text-white px-6 py-3 rounded-xl text-lg hover:bg-purple-800 transition">
+  Quiero mi tienda
+</a>
+
+
+
   </section>
   <!-- Servicios Destacados -->
 
@@ -157,7 +191,7 @@ manera profesional.</p>
     <h2 class="text-3xl font-bold text-center mb-4">Contáctanos</h2>
     <p class="text-center mb-8 text-gray-600">Agenda una reunión, cuéntanos tu proyecto o simplemente escríbenos.</p>
 
-    <form action="https://formsubmit.co/contacto@nexoria.cl" method="POST"
+    <form id = "formulario" action="https://formsubmit.co/contacto@nexoria.cl" method="POST"
       class="bg-white shadow-md rounded-2xl p-8 space-y-6">
       <input type="hidden" name="_captcha" value="false">
 
