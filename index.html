@@ -193,6 +193,14 @@ manera profesional.</p>
       <p class="text-sm text-gray-500 mt-2">contacto@nexoria.cl</p>
     </div>
   </footer>
+
+    <!-- Botón volver arriba -->
+<button id="btnVolverArriba"
+        class="hidden fixed bottom-6 right-6 bg-purple-600 hover:bg-purple-700 text-white px-4 py-2 rounded-full shadow-lg transition-opacity duration-300 z-50">
+  ↑ Subir
+</button>
+
+
   <script>
     const form = document.querySelector("form");
     const mensajeExito = document.getElementById("mensaje-exito");
@@ -247,7 +255,29 @@ manera profesional.</p>
   });
 
   
+  const btnVolverArriba = document.getElementById('btnVolverArriba');
+
+  window.addEventListener('scroll', () => {
+    if (window.scrollY > 200) {
+      btnVolverArriba.classList.remove('hidden');
+    } else {
+      btnVolverArriba.classList.add('hidden');
+    }
+  });
+
+  btnVolverArriba.addEventListener('click', () => {
+    window.scrollTo({
+      top: 0,
+      behavior: 'smooth'
+    });
+  });
+
   </script>
+
+
+
+
+
 </body>
 
 </html>
