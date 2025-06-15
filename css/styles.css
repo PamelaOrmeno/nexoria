@@ -331,3 +331,9 @@ footer {
 html{
   scroll-behavior: smooth;
 }
+
+.logo-img {
+  height: 100px; /* ajusta según el alto que prefieras */
+  width: auto;
+  display: block;
+}
